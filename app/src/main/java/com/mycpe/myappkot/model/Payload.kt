@@ -1,0 +1,35 @@
+import com.google.gson.annotations.SerializedName
+
+data class Payload (
+
+		@SerializedName("id") val id : Int,
+		@SerializedName("first_name") val first_name : String,
+		@SerializedName("last_name") val last_name : String,
+		@SerializedName("email") val email : String,
+		@SerializedName("contact_no") val contact_no : String,
+		@SerializedName("phone") val phone : String,
+		@SerializedName("firm_name") val firm_name : String,
+		@SerializedName("company_name") val company_name : String,
+		@SerializedName("country_id") val country_id : Int,
+		@SerializedName("state_id") val state_id : Int,
+		@SerializedName("city_id") val city_id : Int,
+		@SerializedName("zipcode") val zipcode : Int,
+		@SerializedName("user_type_id") val user_type_id : String,
+		@SerializedName("ctec_id") val ctec_id : String,
+		@SerializedName("designation") val designation : String,
+		@SerializedName("education_ids") val education_ids : Int,
+		@SerializedName("ptin_number") val ptin_number : String,
+		@SerializedName("credit") val credit : Int,
+		@SerializedName("profile_picture") val profile_picture : String,
+		@SerializedName("tags") val tags : List<String>,
+		@SerializedName("education") val education : List<Education>,
+		@SerializedName("user_type") val user_type : List<User_type>,
+		@SerializedName("jobtitle_id") val jobtitle_id : Int,
+		@SerializedName("jobtitle_name") val jobtitle_name : String,
+		@SerializedName("industry_id") val industry_id : Int,
+		@SerializedName("industry_name") val industry_name : String,
+		@SerializedName("country") val country : String,
+		@SerializedName("state") val state : String,
+		@SerializedName("city") val city : String,
+		@SerializedName("token") val token : String
+)
